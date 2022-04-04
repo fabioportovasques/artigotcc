@@ -1,0 +1,21 @@
+Desenvolvimento do Algoritmo de Alerta de Troca de Óleo e Dispositivo de Exibição
+https://www.koreascience.or.kr/article/JAKO201424750260557.page
+
+@article{chun2014development,
+  title={Development of Oil Change Warning Algorithm and Display Device},
+  author={Chun, Sang Myung},
+  journal={Tribology and Lubricants},
+  volume={30},
+  number={3},
+  pages={168--176},
+  year={2014},
+  publisher={Korean Tribology Society}
+}
+
+Este artigo apresenta um algoritmo de alerta de troca de óleo do motor baseado nos resultados do teste de um pequeno sensor de detecção de deterioração do óleo do motor tipo medidor de vareta, software para realizar o algoritmo e um dispositivo de exibição para aplicar o software. O algoritmo determina a condição de deterioração do óleo do motor a partir da taxa de mudança na constante dielétrica com base na capacitância média medida em
+80
+∘
+C
+após o motor parar. A taxa de mudança na constante dielétrica no momento da troca de óleo se correlaciona com o tempo em que um dos limites de advertência recomendados para as propriedades físicas do óleo do motor, como TAN (Número de Ácido Total), TBN (Número Base Total) e viscosidade, é atingido pela primeira vez. Neste ponto, um sinal de aviso para troca de óleo aparece no dispositivo de exibição como um smartphone ou dispositivo de exibição individual. Os quadros do aplicativo para smartphone têm três etapas. O usuário pode inserir diretamente todos os limites no quadro do aplicativo para smartphone. A tela do dispositivo de exibição compreende um quadro para cada assinatura de aviso com a mensagem relacionada. O usuário pode inserir os limites no dispositivo através de um cabo USB conectado a um computador pessoal
+
+

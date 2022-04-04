@@ -1,0 +1,29 @@
+Vehicle Remote Health Monitoring and Prognostic Maintenance System
+
+Os sistemas veiculares são complexos tanto em hardware quanto em software, portanto sua manutenção é um desafio.
+ A estratégia de manutenção utilizada na indústria automobilística é normalmente reativa que resulta na redução da
+ vida útil do veículo e também na perda de dinheiro. A manutenção preditiva é necessária neste estágio para superar
+ esses problemas. É relatado pela Comissão Europeia que haverá um incremento de 50% nos veículos de transporte dentro
+ de 20 anos [1]. Isso exigirá estratégias eficazes para manter o desempenho do veículo. Veículos com estrutura muito
+ complexa precisam de uma estratégia de manutenção eficaz. Três tipos de estratégias de manutenção estão sendo usados
+ ​​na indústria de veículos: manutenção preditiva, manutenção corretiva e manutenção preventiva. A manutenção preventiva 
+é realizada após a ocorrência de uma falha. É usado para falhas infrequentes quando o reparo é extremamente caro. 
+A manutenção preventiva é a prática comum na indústria automobilística, onde as peças dos veículos são atualizadas
+ ocasionalmente. Em contraste com a manutenção preventiva e corretiva, na manutenção preditiva [2], a condição atual
+ do sistema/veículo é analisada para prever o que provavelmente irá falhar.
+
+Nossas duas contribuições são a previsão de falhas em quatro sistemas principais do veículo e o monitoramento do veículo 
+em tempo real e o sistema de manutenção prognóstica. Este artigo apresenta uma abordagem usando dados de sensores e algoritmos
+ de aprendizado de máquina junto com aplicativos de smartphones para analisar completamente os subsistemas e fornecer previsão
+ de falhas nos subsistemas. Uma grande vantagem do sistema proposto pode estar no projeto mais recente da indústria de veículo
+s, incluindo carros autônomos, onde todos os sistemas do carro são automáticos; O VMMS pode ajudar na previsão automática 
+de falhas dos sistemas do veículo.
+
+@article{shafi2018vehicle,
+  title={Vehicle remote health monitoring and prognostic maintenance system},
+  author={Shafi, Uferah and Safi, Asad and Shahid, Ahmad Raza and Ziauddin, Sheikh and Saleem, Muhammad Qaiser},
+  journal={Journal of advanced transportation},
+  volume={2018},
+  year={2018},
+  publisher={Hindawi}
+}

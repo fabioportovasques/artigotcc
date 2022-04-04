@@ -1,0 +1,61 @@
+Resumos:
+
+Syscontrol:
+No trabalho de [Fabian 2015] foi apresentado um protótipo de um aplicativo pessoal de manutenção de automóveis para dispositivos móveis. 
+o App visa ter um controle sobre os veículos cadastrados, bem como: acompanhar e registrar  a quilometragem, consumo de combustível, manutenções,serviços e despesas do veículo, Com as devidas informações inseridas no dispositivo, o aplicativo permite  que o usuário programe com antecedencia as manutenções do veículo respeitando o tempo correto de suas manutenções preditivas.
+
+[Fabian 2015], utilizou a linguagem java no ambiente Android Studio e banco de dados Sqlite.
+
+tecnologias em comum:
+caso de uso
+diferencial: aplicativo
+-------------------------------------------------------------------------------------------------
+
+
+NO trabalho de [PiacentiniLiane2012] foi desenvolvido um sistema com o foco em gerir informações de manutenções dos veículos, porém dessa vez o objetivo é gerenciar a frota agricola e também ter um controle sobre o aluguél das referidas máquinas, bem como estimar custos fixos e variaveis, como custo real por horário e custo operacional em operações agricolas. 
+Foi utilizado o banco de dados firebird  na versão 1.5 e ambiente de desenvolvimento delphi.
+
+tecnologias em comum:0
+diferencial: anco de dados firebird e delphi
+
+---------------------------------------------------------------------------------------------------
+
+
+No trabalho de \cite{chun2014development} foi desenvolvido um algoritimo  que emite alertas de trocas de óleo no smartfhome, o autor ultilizou um sensor conectado juntamente a vareta de verificação do nível de óleo, que envia informações para o software comunicando-o que o óleo precisa ser trocado, conforme \cite{chun2014development} Ao avaliar o estado de deterioração do óleo do motor, o motorista recebe uma notificação no App sobre o momento correto da troca do óleo.
+Para o desenvolvimento do sistema foi ultilizado a IDE eclipse, e a linguagem java que recebe informações do sensor que se comunica através do bluetooth.
+
+-------------------------------------------------------------------------------------------------
+
+Segundo o autor: \cite{shafi2018vehicle}, foi realizado um estudo que apresenta uma abordagem usando dados de sensores e algoritmos
+ de aprendizado de máquina junto com aplicativos de smartphones que visam fornecer previsão de possíveis falhas nos sistemas do veículo
+
+
+
+
+-------------------------------------------------------------------------------------------------
+
+Os sistemas veiculares são complexos tanto em hardware quanto em software, portanto sua manutenção é um desafio.
+ A estratégia de manutenção utilizada na indústria automobilística é normalmente reativa que resulta na redução da
+ vida útil do veículo e também na perda de dinheiro. A manutenção preditiva é necessária neste estágio para superar
+ esses problemas. É relatado pela Comissão Europeia que haverá um incremento de 50 \% nos veículos de transporte dentro
+ de 20 anos [1]. Isso exigirá estratégias eficazes para manter o desempenho do veículo. Veículos com estrutura muito
+ complexa precisam de uma estratégia de manutenção eficaz. Três tipos de estratégias de manutenção estão sendo usados
+ ​​na indústria de veículos: manutenção preditiva, manutenção corretiva e manutenção preventiva. A manutenção preventiva 
+é realizada após a ocorrência de uma falha. É usado para falhas infrequentes quando o reparo é extremamente caro. 
+A manutenção preventiva é a prática comum na indústria automobilística, onde as peças dos veículos são atualizadas
+ ocasionalmente. Em contraste com a manutenção preventiva e corretiva, na manutenção preditiva [2], a condição atual
+ do sistema/veículo é analisada para prever o que provavelmente irá falhar.
+ \\ Nossas duas contribuições são a previsão de falhas em quatro sistemas principais do veículo e o monitoramento do veículo 
+em tempo real e o sistema de manutenção prognóstica. 
+
+
+Este artigo apresenta uma abordagem usando dados de sensores e algoritmos
+ de aprendizado de máquina junto com aplicativos de smartphones para analisar completamente os subsistemas e fornecer previsão
+ de falhas nos subsistemas. Uma grande vantagem do sistema proposto pode estar no projeto mais recente da indústria de veículos, incluindo carros autônomos, onde todos os sistemas do carro são automáticos; O VMMS pode ajudar na previsão automática 
+de falhas dos sistemas do veículo.
+
+
+
+ e notificar o motorista sobre o momento da troca de óleo, a ansiedade sobre o tempo de troca de óleo do motor pode ser eliminada e o consumo de óleo causado por uma troca de óleo antecipada imprudente pode ser reduzido, protegendo assim os recursos petrolíferos. poluição do ar pode ser reduzida. Além disso, pode contribuir para evitar a diminuição da eficiência do combustível devido à deterioração excessiva do óleo do motor. Portanto, através deste estudo, desenvolvemos um algoritmo de alarme para indicar o tempo de troca de óleo do motor com base nos resultados do teste de instalação do sensor de deterioração de óleo do tipo medidor de vareta desenvolvido anteriormente [1-2] no veículo, e quero desenvolver um dispositivo de exibição.
+\\ O receptor produziu um quadro de aplicativo de smartphone para alerta de troca de óleo e um quadro de tela para um dispositivo de exibição dedicado com base no algoritmo de determinação de alerta de troca de óleo e na interface de usuário (UI) aplicada. O algoritmo de medição do receptor é mostrado na Fig. 3 (aplicativo para smartphone) e Fig. É o mesmo que 4 (dispositivo de exibição dedicado). Os dados são trocados entre o transmissor do sensor de deterioração do óleo e o receptor, como um smartphone ou dispositivo de exibição dedicado, usando comunicação Bluetooth.
+\\O Eclipse 4.3 foi utilizado como ferramenta de desenvolvimento de software para o desenvolvimento do aplicativo para smartphone Android, que é um dispositivo de exibição do receptor, e Java foi utilizado como linguagem de programação. Além disso, o IAR EWARM 6.5 foi usado como ferramenta de desenvolvimento de software do dispositivo de exibição dedicado e C++ foi usado como linguagem de programação.

@@ -1,0 +1,8 @@
+apresentação seminario tcc
+
+A aplicação Óleo Service tem como objetivo auxiliar o posto de gasolina a gerenciar as trocas de óleo de seus clientes,
+gerando notificações na dashboard sobre os status de trocas de óleo.
+Notificação na cor verde: total de trocas efetuadas;
+Notificação na cor amarelo: trocas faltando trinta dias para o vencimento;
+Notificação na cor vermelho: trocas vencidas;
+

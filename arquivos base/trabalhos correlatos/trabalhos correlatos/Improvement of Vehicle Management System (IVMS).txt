@@ -1,0 +1,163 @@
+Melhoria do Sistema de Gestão de Veículos (IVMS)
+ingles: Improvement of Vehicle Management System (IVMS)
+
+
+Este trabalho de pesquisa para o desenvolvimento do aplicativo de software do Sistema de Gerenciamento de Veículos (VMS) para Unihomes. O desenvolvimento deste sistema de gestão de associados foi proposto devido às práticas convencionais de gestão manual de veículos da Unihomes, que causaram diversas complexidades na gestão dos veículos, aluguel e detalhes da operação. Principalmente, os problemas reconhecidos são veículos e detalhes de aluguel não estão em um banco de dados, longo tempo de processamento para produzir relatórios, veículos errados estão sendo reservados. Assim, os objetivos centrais deste projeto de desenvolvimento foram resolver a maioria desses desafios e complexidades encontrados devido às práticas convencionais de gerenciamento manual de veículos. Em geral, este projeto de desenvolvimento é uma implementação de um sistema informatizado de gerenciamento de membros que adota o conceito de banco de dados inter-relacionado para armazenar, gerenciar e organizar dados de maneira sistemática e eficiente. Microsoft Visual Studio 2016, Crystal Reports e MYsql foram usados ​​como ferramentas de desenvolvimento chave para este projeto de desenvolvimento. Além disso, a metodologia Agile Unified Process que se estabeleceu benéfica por várias organizações foi adotada e aplicada para todo este projeto de desenvolvimento. Essa implementação garantirá que a usabilidade do aplicativo será fácil, pois o usuário tinha dificuldades para analisar os dados quando o registro era feito manualmente e era difícil para o registro de forma rápida e eficiente.
+
+
+bibitex:
+@inproceedings{ahmed2019improvement,
+  title={Improvement of Vehicle Management System (IVMS)},
+  author={Ahmed, Falah YH and al Thiruchelvam, Muthukumaran and Fong, Sim Liew},
+  booktitle={2019 IEEE International Conference on Automatic Control and Intelligent Systems (I2CACIS)},
+  pages={44--49},
+  year={2019},
+  organization={IEEE}
+}
+
+
+inglês:
+
+Unihomes is one of the main house agents for the
+students who are studying in Management and Science
+University (MSU). They rent rooms for students from the
+condominiums around Section 13, Shah Alam which is
+Menara U1 and Menara U2. Other than giving rentals in
+rooms for the students, they just started to provide car rentals
+for the students and public who wish to rent a car for a day or
+two. [1]
+Since the car rental services is just started by Unihomes,
+the management practices are still conservative and very
+much traditional. In businesses, the faster you can actually
+make your transactions the better it will be, and by managing
+the business in a manual way, it causes the management to
+make slow transactions and they do tend to make easy
+mistakes when it comes to booking and even maintaining the
+vehicle itself. [2] This had caused certain customers to be
+very not satisfied with the booking process. In the context of
+vehicle management system, the whole vehicle management
+process is done in a very traditional method, where involves
+a lot of manual work. Due to these traditional recording
+practices, Unihomes management is encountering problems
+in managing their vehicle and operations. There are three
+problems that can be identified, and the first problem is,
+there is no database system to manage the rental and vehicle
+management details. The second problem is reports takes a
+longer time to generate in the manual way.
+The third
+problem is wrong vehicles are being booked. For example,
+managing their rental forms, customer details and car details
+in forms which leads to them to have a lot of paperwork.
+Moreover, this also costs them time when they are finding
+back the details related to that particular detail regarding the
+car and customer. Plus, there is no back up in the method
+which they are doing since the forms which they have can go
+missing and maybe damaged. To design a Database System
+to manage their vehicle management, which user able to
+keep the record or data using the application.
+To create a database system to manage their vehicle
+information and car rental details.
+ii. To create new feature such as reports to aid the
+management.
+iii. To improve the vehicle management and car rental
+process by using the database system.
+
+
+
+
+
+
+
+português:
+
+
+A Unihomes é um dos principais agentes da casa para o
+estudantes que estão estudando em Administração e Ciências
+Universidade (MSU). Eles alugam quartos para estudantes da
+condomínios em torno da Seção 13, Shah Alam, que é
+Menara U1 e Menara U2. Além de dar aluguéis em
+quartos para os alunos, eles começaram a oferecer aluguel de carros
+para estudantes e público que desejam alugar um carro por um dia ou
+dois. [1]
+Como o serviço de aluguel de carros acaba de ser iniciado pela Unihomes,
+as práticas de gestão ainda são conservadoras e muito
+muito tradicional. Nas empresas, quanto mais rápido você pode realmente
+tornar suas transações melhores, e gerenciando
+o negócio de forma manual, faz com que a gestão
+fazem transações lentas e eles tendem a facilitar
+erros na hora de reservar e até mesmo manter o
+próprio veículo. [2] Isso fez com que alguns clientes ficassem
+muito insatisfeito com o processo de reserva. No contexto de
+sistema de gestão de veículos, todo o gerenciamento de veículos
+processo é feito em um método muito tradicional, onde envolve
+muito trabalho manual. Devido a essas gravações tradicionais
+práticas, a gestão da Unihomes encontra problemas
+no gerenciamento de seus veículos e operações. Há três
+problemas que podem ser identificados, e o primeiro problema é,
+não há sistema de banco de dados para gerenciar o aluguel e o veículo
+detalhes de gestão. O segundo problema é que os relatórios demoram um
+mais tempo para gerar de forma manual.
+O terceiro
+problema é que os veículos errados estão sendo reservados. Por exemplo,
+gerenciar seus formulários de aluguel, detalhes do cliente e detalhes do carro
+em formulários que os leva a ter muita papelada.
+Além disso, isso também lhes custa tempo quando estão encontrando
+de volta os detalhes relacionados a esse detalhe específico sobre o
+carro e cliente. Além disso, não há backup no método
+que estão fazendo, pois as formas que possuem podem ir
+ausente e talvez danificado. Para projetar um sistema de banco de dados
+para gerir a gestão do seu veículo, qual o utilizador capaz de
+manter o registro ou dados usando o aplicativo.
+Para criar um sistema de banco de dados para gerenciar seu veículo
+informações e detalhes de aluguel de carros.
+ii. Para criar novos recursos, como relatórios, para auxiliar o
+gestão.
+iii. Para melhorar a gestão de veículos e aluguel de carros
+processo usando o sistema de banco de dados.
+Existem 2 extensões de tarefa, que é o grau do cliente e
+escopo de aplicação. No escopo do cliente, o cliente está pronto para lidar
+com as informações do Sistema de Gestão de Veículos.
+Para o escopo do sistema consiste o recurso no Veículo
+Sistema de gerenciamento, como manutenção de registros no veículo
+e detalhes de aluguel e relatórios. Além disso, o VMS é um único
+sistema autônomo do usuário, que não requer uma rede
+ou um sistema de banco de dados high-end. As hipóteses são as
+processo de gestão de veículos e o processo de aluguer de automóveis
+ser feito de forma rápida e eficiente, e não haverá mais
+erros em dar o carro errado aos clientes. O
+a gerência não perderá o controle de nenhum cronograma importante
+sobre o carro, pois todos os detalhes sobre qualquer serviço
+está no sistema. A limitação do projeto é que o sistema
+só funciona no sistema operacional Windows. Só pode ser acessado nesse
+determinado computador em que foi instalado, uma vez que não é um
+sistema de banco de dados baseado na web.
+Esta seção explicará as práticas atuais do manual do
+gestão para gestão de veículos. [1] Trabalho manual
+refere-se a práticas como manter muitos papéis
+sobre os veículos que possuem, e ter que escrever
+todos os registros de aluguel em um livro.
+A inscrição e o processo de reserva serão através de um
+formulário de registro. Em seguida, os detalhes serão transferidos para um
+livro de registro de sócios. Um recibo de confirmação será
+preparado manualmente através de software de processamento de texto. Para
+o Pagamento, será emitido um recibo manual. Os detalhes de
+essas transações serão registradas em recibos de caixa e
+livro de registro de detalhes de pagamento. Para a gestão de veículos
+sistema, todos os registros e informações sobre o
+veículo, por exemplo, os detalhes do veículo, taxas de serviço e
+qualquer manutenção feita no veículo será registrada no
+diário de bordo do veículo.
+Relatórios são gerados para a administração e membros,
+que exige muito esforço e tempo. Basicamente, o
+os detalhes das informações são extraídos manualmente para o registro
+livros e as informações extraídas serão então transferidas
+manualmente no aplicativo de software do computador, como
+processamento de texto e planilha padrão. finalmente, o
+relatórios são gerados
+e impresso usando estes padrões
+formulários
+A seguir estão os cinco mais baixados
+software de gestão de membros disponível no mercado
+a partir de abril de 2018, que tem as mesmas funções e
+objetivos com o sistema de banco de dados desenvolvido neste
+projeto.

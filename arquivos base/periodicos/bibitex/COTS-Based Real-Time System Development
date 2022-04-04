@@ -1,0 +1,19 @@
+COTS-Based Real-Time System Development: An Effective Application in Pump Motor Control
+
+referencia:
+
+@article{GeorgeK.Adam2020CRSD,
+issn = {2073-431X},
+abstract = {The progress of embedded control systems in the last several years has made possible the realization of highly-effective controllers in many domains. It is essential for such systems to provide effective performance at an affordable cost. Furthermore, real-time embedded control systems must have low energy consumption, as well as be reliable and timely. This research investigates primarily the feasibility of implementing an embedded real-time control system, based on a low-cost, commercially off-the-shelf (COTS) microcontroller platform. It explores real-time issues, such as the reliability and timely response, of such a system implementation. This work presents the development and performance evaluation of a novel real-time control architecture, based upon a BeagleBoard microcontroller, and applied into the PWM (pulse width modulation) control of a three-phase induction motor in a suction pump. The approach followed makes minimal use of general-purpose hardware (BeagleBone Black microcontroller board) and open-source software components (including Linux Operating System with PREEMPT_RT real-time support) for building a reliable real-time control system. The applicability of the proposed control system architecture is validated and evaluated in a real case study in manufacturing. The results provide sufficient evidence of the efficiency and reliability of the proposed approach into the development of a real-time control system based upon COTS components.},
+journal = {Computers (Basel)},
+pages = {97},
+volume = {9},
+publisher = {MDPI AG},
+number = {97},
+year = {2020},
+title = {COTS-Based Real-Time System Development: An Effective Application in Pump Motor Control},
+language = {eng},
+author = {George K. Adam and Nikos Petrellis and Panagiotis A. Kontaxis and Tilemachos Stylianos},
+keywords = {BeagleBone Black ; commercial off-the-shelf components ; Linux ; motor control ; real-time ; reliability},
+}
+

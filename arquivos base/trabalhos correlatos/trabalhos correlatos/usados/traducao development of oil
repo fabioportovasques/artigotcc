@@ -1,0 +1,288 @@
+Desenvolvimento do Algoritmo de Alerta de Troca de Óleo
+e dispositivo de exibição
+
+resumo:
+Este artigo apresenta um algoritmo de alerta de troca de óleo do motor baseado nos resultados de teste de um pequeno
+sensor de detecção de deterioração do óleo do motor tipo stick-gage, software para realizar o algoritmo e um dispositivo de exibição
+para aplicar o software. O algoritmo determina a condição de deterioração do óleo do motor a partir da taxa de mudança
+na constante dielétrica com base na capacitância média medida a 80 o C após o motor parar. A taxa de
+mudança na constante dielétrica no momento da troca de óleo correlaciona-se com o tempo que um dos recomendados
+limites de advertência para as propriedades físicas do óleo do motor, como TAN (Número de Ácido Total), TBN (Número Base Total)
+e a viscosidade é atingida primeiro. Neste ponto, um sinal de aviso para troca de óleo aparece no dispositivo de exibição como
+um smartphone ou dispositivo de exibição individual. Os quadros do aplicativo para smartphone têm três etapas. O usuário pode
+insira diretamente todos os limites no quadro do aplicativo para smartphone. A tela do dispositivo de exibição com-
+captura um quadro para cada assinatura de aviso com a mensagem relacionada. O usuário pode inserir os limites para o
+dispositivo através de um cabo USB conectado a um computador pessoal.
+-----------------------------------------------------------------------------------------------------------------------------
+
+Hora de trocar o óleo julgando o estado de deterioração do óleo do motor
+é avisado ao motorista, então ele fica preocupado com o tempo de troca do óleo do motor.
+Ele pode se livrar do caqui e pode ser danificado por uma troca de óleo precoce imprudente.
+Pode reduzir o consumo de petróleo e proteger os recursos petrolíferos.
+Também pode reduzir a poluição do ar. Também ienes
+É usado para evitar a deterioração da eficiência do combustível devido à deterioração excessiva do óleo Jin.
+pode contribuir Portanto, por meio deste estudo, o
+Sensor de deterioração de óleo pequeno tipo medidor de vareta [1-2]
+Com base nos resultados dos testes instalados no veículo, o Desenvolva um algoritmo de alarme para indicar a hora da troca e
+Queremos desenvolver o dispositivo de exibição.
+
+
+
+Ao obter a implementação e a taxa de variação da constante dielétrica do óleo, o usuário
+Smartphone para entender o estado de deterioração do óleo do motor
+Android App (Smart Phone Android App) e dedicado
+Um dispositivo de exibição foi desenvolvido e um algoritmo de decisão foi aplicado.
+A constante dielétrica do óleo para determinar o grau de deterioração do óleo
+A razão pela qual foi selecionado como fator de julgamento é a seguinte.
+Os hidrocarbonetos, que são os principais componentes do óleo do motor, têm uma forte ligação entre os átomos.
+Por não ser forte, reage com o oxigênio do ar devido à decomposição térmica.
+Em outras palavras, é facilmente deteriorado para formar um óxido.
+todo. Portanto, a viscosidade muda devido à mudança nas propriedades físicas do óleo, e a parte metálica
+A capacidade de parar de comer é reduzida. Portanto, o principal
+Como aditivo funcional, é um antioxidante para reduzir a oxidação e retardar a oxidação.
+Use papel para evitar oxidação e corrosão. assim
+Oxidação à medida que o óleo se deteriora através da deterioração e oxidação repetidas
+À medida que o inibidor se esgota, o óleo é oxidado e,
+vai mudar
+
+O grau desta oxidação pode ser avaliado pelo valor TAN.
+posso O valor computadorizado é a quantidade de eletricidade contida no lubrificante.
+Refere-se à quantidade de substâncias ácidas em adultos. Portanto, esse valor computacional
+A saturação indica o grau de oxidação do óleo e, à medida que o óleo se deteriora,
+aumenta em conformidade. O grau de oxidação desses óleos, ou seja, a
+A mudança é uma mudança na propriedade física do óleo chamada constante dielétrica e
+ter um relacionamento próximo As características da constante dielétrica são
+Antioxidante porque indica o grau de transferência de energia
+À medida que o gás se esgota, o óleo torna-se eletricamente positivo e aumenta
+será colocado No entanto, no início do uso do óleo, os antioxidantes
+Ele é ativado e se torna eletricamente mais negativo.
+Também pode diminuir poeticamente. Enquanto isso, água, refrigerante e combustível
+No caso de ser introduzido no óleo, a viscosidade diminui, e
+Quando a fuligem é misturada, a viscosidade aumenta. Por outro lado esta
+Uma mistura de um material estranho líquido e fuligem faz com que o óleo do motor se torne elétrico.
+Como resultado, é convertido positivamente em energia elétrica no óleo do motor.
+À medida que aumenta a quantidade de lua, a constante dielétrica do óleo do motor é aumentada.
+ligar
+Por outro lado, o agente infeccioso (todo alcalino, TBN) neutraliza o ácido.
+
+É usado para neutralização de ácido, e é necessário ter um alto poder contagioso
+isso é bom Básico (alcalino) como o óleo do motor é usado
+A quantidade do aditivo é gradualmente reduzida. portanto contagiante
+Ao medir Giga, o óleo do motor tem um certo nível de resistência ao ácido.
+Você pode dizer se você tem a habilidade defensiva da espada.
+Dentro do intervalo de troca de óleo recomendado pelo fabricante do automóvel
+A primeira propriedade do óleo que atinge o limite de uso é o óleo.
+O primeiro, que indica o grau de oxidação do óleo em vez da mudança na viscosidade do óleo.
+Foi confirmado que o índice de acidez e o período infeccioso foram alterados [4-5]. Portanto
+Para determinar o limite de uso do óleo, é necessário calcular o
+A quantidade de mudança na constante dielétrica que está intimamente relacionada com a mudança giga
+É razoável selecioná-lo como fator para determinar o intervalo de troca de óleo.
+Vejo. A constante dielétrica desses óleos mede a capacitância do óleo.
+Pode ser obtido ajustando [6-10].
+
+O sinal capacitivo do sensor fica estável depois que o motor é desligado.
+Após desligar o motor, a temperatura do óleo do motor deve ultrapassar 100 o C.
+B, geralmente sobe para cerca de 90 o C, e o sinal do sensor não é estável.
+Leva até 10 minutos para medir o valor da capacitância.
+Quanto à temperatura a ser determinada, 80 o C foi considerado adequado [3]. Portanto,
+O estado de deterioração do óleo do motor foi medido a 80 o C depois que o motor foi desligado.
+Meça o valor da capacitância do óleo do motor e calcule o valor médio
+Depois de converter para uma constante, foi julgado pela taxa de variação, e
+A taxa de mudança da constante dielétrica no momento da substituição é a mudança nas propriedades físicas do óleo do motor.
+A constante dielétrica associada ao tempo em que o limite útil é atingido
+É o valor da taxa de mudança.Neste momento, um alarme de troca de óleo do motor é exibido.
+fez assim
+
+Neste estudo, o óleo do motor aplicando os resultados do teste do veículo
+Desenvolveu um algoritmo de alarme de troca e desenvolveu ainda mais o algoritmo
+Depois de desenvolver o software de implementação, o dispositivo de exibição ao qual é aplicado
+desenvolvido.
+
+
+Além disso, será descrito um dispositivo de exibição fabricado para exibi-lo.
+quer Cena básica da condição de qualidade do óleo do dispositivo de exibição
+As chamadas são 'OK', 'Aviso (WRN)', 'Adicional (ADD)' e 'Troca'.
+(CHN)' e assim por diante. Mudança constante dielétrica para cada sinal fundamental
+O padrão da taxa tem um valor diferente para cada óleo de motor, que é
+É decidido após o teste de dose [3]. Como dispositivo de exibição de recepção, um smartphone
+Ele foi desenvolvido para que telefones celulares e dispositivos de exibição dedicados possam ser usados.
+A estrutura da tela do aplicativo para smartphone foi estruturada em três etapas,
+No entanto, o valor de referência pode ser inserido e modificado diretamente na tela do aplicativo do smartphone.
+tornou isso possível. Por outro lado, a tela do dispositivo de exibição dedicado
+O sobrenome pode ser exibido em uma tela para um alarme.
+e o valor padrão foi determinado conectando o computador e o USB
+para ser inserido.
+
+
+2-1. Algoritmo de controle do transmissor
+
+No transmissor, tempo de condução (quilometragem), capacitância do óleo
+(Capacitância), implementação do ponto decimal da temperatura do óleo, placa de controle (PCB)
+A temperatura, etc., é usada como parâmetro para julgar as informações do ambiente de troca de óleo.
+e meça a capacitância máxima/mínima por 1 minuto
+Quando a diferença entre os valores é de 0,02 pF ou menos, o motor para
+Ele é definido como padrão e a função salvar do valor de configuração inicial é aplicada.
+fez. O algoritmo de medição do transmissor é mostrado na Fig. O mesmo que 2.
+
+
+O ambiente de desenvolvimento do transceptor é o seguinte. Em outras palavras, a arte do transmissor
+AtmelStudio como ferramenta de desenvolvimento de software ATmega
+6.0 foi utilizado, e a linguagem de programação foi C++.
+isso foi Os parâmetros de medição do transmissor são medidos da seguinte forma
+fez. Temperatura do óleo do motor medida com um sensor de temperatura externo (RT 100)
+é a temperatura em graus Celsius, com 3 inteiros e 1 casa decimal.
+fez. Além disso, ASIC (Circuito Integrado Específico da Aplicação:
+Óleo do sensor de temperatura externo enviado do circuito integrado especial da aplicação)
+Transmite um sinal de temperatura através de Bluetooth uma vez por segundo. no sensor
+A unidade de medida do sinal de capacitância do óleo enviado do
+
+A unidade de medida do sinal de capacitância do óleo enviado do
+Acima, são exibidos 2 inteiros e 5 casas decimais. esta
+Ao transmitir de ASIC para Bluetooth, um sinal capacitivo
+O número é enviado uma vez por segundo. O valor medido da capacitância do óleo é
+Estática média a 80 o C após desligar o motor quando o arco está estável
+refere-se ao valor da capacidade. Pressione o botão de reinicialização
+Após a parada do motor do 1º Enchimento de Óleo Verde
+O valor médio de capacitância (valor de capacitância inicial) a 80 o C é
+Continue a armazenar e continue o óleo até a mudança do dia
+Medido após a última parada do motor para conhecer o estado de deterioração
+Valor médio de capacitância de 80 o C (valor de capacitância após a parada do motor,
+também conhecido como Stop Capa. valor) também foi salvo a cada vez. lado de dentro
+
+Temperatura medida na placa de controle (PCB) medida pelo sensor de temperatura
+é expresso como um número inteiro de três dígitos em graus Celsius. este sinal de temperatura
+Além disso, ao enviar do ASIC, ele é transmitido via Bluetooth uma vez por segundo.
+todo. Enquanto isso, acumulando tempo enquanto o motor está funcionando,
+Exibe o tempo de condução (distância) em horas:minutos:segundos. ao dirigir
+Diagrama de sinal do fígado para o 1º enchimento de óleo verde
+Pressione o botão de reset para começar a acumular o tempo de condução.
+
+
+2-2. Configuração do software de controle do receptor
+
+2-2. Configuração do software de controle do receptor
+A unidade receptora usa o algoritmo de julgamento de alarme de troca de óleo e aplica
+Alarme de troca de óleo baseado na interface do usuário (UI)
+Tela do quadro do aplicativo do smartphone e dispositivo de exibição dedicado para
+quadro foi feito. O algoritmo de medição do receptor é mostrado na Fig. 3
+(aplicativo para smartphone) e Fig. É o mesmo que 4 (dispositivo de exibição dedicado). quintan
+Um transmissor do sensor de detecção de incêndio e um smartphone ou dispositivo de exibição dedicado, etc.
+Os dados são transmitidos usando comunicação Bluetooth com o receptor de
+ser informado
+Desenvolvimento de aplicativo Android para smartphone, que é um dispositivo de exibição do receptor
+
+Desenvolvimento de algoritmo de informação de troca de óleo e dispositivo de exibição
+
+
+O Eclipse 4.3 foi usado como ferramenta de desenvolvimento de software para
+A linguagem de programação era Java. Além disso, uma tela dedicada
+Usamos o IAR EWARM 6.5 como nossa ferramenta de desenvolvimento de software.
+e C++ foi usado como linguagem de programação.
+Por outro lado, o receptor se conecta ao smartphone e envia
+Receba os sinais enviados e implemente o algoritmo de alarme na tela
+Além disso, as principais informações do ambiente de troca de óleo podem ser armazenadas.
+todo. Existe uma função de seleção do tipo de óleo e o
+Valores padrão para julgar as informações diárias do ambiente escolar (thresh
+
+
+3. Algoritmo de informações de troca de óleo
+Troca de óleo com base no resultado do teste de condução do veículo
+O algoritmo de alarme (Fig. 5) é o seguinte.
+
+
+3-1. recepção de sinal
+Como informações enviadas do circuito integrado especial de aplicação (ASIC) do transmissor
+Sinal de capacidade total e sinal de temperatura uma vez por segundo via Bluetooth
+receptor
+
+
+3-2. Configuração inicial e modo de reinicialização
+modo de reinicialização)
+No momento da troca inicial do óleo do motor e reinicialização, o seguinte
+O valor de referência deve ser definido através do mesmo processo.
+1) Após a injeção inicial de óleo novo, é aquecido a 85 o C no estado inativo.
+Após elevar a temperatura e desligar o motor, de 80,4 o C para 79,5 o C
+Após medir o valor da capacitância, ele é armazenado como um valor médio de 80 o C.
+passar tempo junto Aqui, o Modo de Parada do Motor é
+Durante a medição do valor de capacitância, o valor máximo dos valores medidos e
+Quando o desvio entre os valores mínimos for 0,02 pF ou menos.
+2) Valor teórico de capacitância pré-armazenado (valor calculado) e óleo novo
+O valor da constante dielétrica (D. C.: constante dielétrica) é também o valor de 80 o C
+salve como
+1 amostra de óleo
+
+1 Valor teórico de capacitância a 80 °C de óleos de amostra
+2 Óleos de amostra (óleo novo) para cálculo da capacitância teórica
+Valor da constante dielétrica a 80 o C de
+3) Desvio de medição de capacitância a 80 o C = óleo fresco inicial (ou
+Óleo na reinicialização) Valor de capacitância médio medido do veículo - este
+Calculado com o valor da capacitância Ron (valor pré-armazenado). vela
+Óleo novo (ou óleo ao reiniciar) Medição do veículo Falta média de energia
+O valor da quantidade é continuamente armazenado no transmissor.
+
+0 o C에서의 정전용량 측정편차 = 초기 신유(혹은
+재설정(reset) 시 오일) 차량 측정 평균 정전용량 값-이
+론 정전용량 값(미리 저장해 놓은 값)으로 계산함. 초
+기 신유(혹은 재설정 시 오일) 차량 측정 평균 정전용
+량 값은 송신부에 계속 저장해 놓는다.
+4) 80 o C에서의 초기 실 차량 평균 정전용량 값 =
+
+Óleo fresco inicial (ou óleo na reinicialização) Medição do veículo Interrupção média
+Valor de capacitância - Desvio de medição de capacitância.
+5) Óleo do 1º Enchimento de Óleo Verde a 80 o C
+A constante total é calculada pela fórmula a seguir.
+Valor da constante dielétrica da medição real inicial do veículo = (Medição real inicial do veículo
+Valor médio de capacitância - desvio de medição de capacitância)/1,52853626.
+6) Taxa de mudança da constante dielétrica inicial = (constante dielétrica medida do veículo real)
+valor - valor da constante dielétrica inicial) / valor da constante dielétrica
+Aqui, o valor da constante dielétrica inicial é a herança pré-armazenada de óleo novo.
+É um valor constante. Portanto, a taxa de variação da constante dielétrica inicial torna-se 0.
+
+
+Valor da constante dielétrica da real inicial do veículo = (Medição real inicial do veículo)
+Valor médio de capacitância - desvio de capacidade de capacitância)/1,52853626.
+6) Taxa de mudança da constante dielétrica inicial = (constante dielétrica medida do veículo real)
+valor - valor da constante dielétrica inicial) / valor da constante dielétrica
+Aqui, o valor da constante dielétrica inicial é a herança pré-armazenada de óleo novo.
+É um valor constante. Portanto, a taxa de constante dielétrica tornase 0.
+7) A taxa de parada do motor constante dielétrica quando parado após cada condução no futuro
+O valor de capacitância média inicial usado para calcular o valor é
+continuar economizando para
+
+
+2) Tempo de funcionamento do motor (tempo correspondente à quilometragem)
+Continuar a acumular até trocar.
+3) Meça e exiba a capacitância enquanto o motor estiver funcionando.
+Valor de capacitância medido por 1 minuto após a parada do motor sem salvar
+O desvio entre os valores máximo e mínimo de
+Temperatura do óleo no modo de parada do motor quando
+Quando é 80 o C, calcule a taxa de variação da constante dielétrica e compare
+Faz
+
+
+3-3. Modo de marcha lenta e funcionamento
+1) Quando o motor é ligado, o tempo de operação (distância percorrida e
+tempo de resposta).
+1 Acumulação do tempo de funcionamento do motor inicial a gasolina (distância): tempo e gasolina
+Valor da taxa de mudança constante dielétrica inicial (taxa de mudança D.C.)
+Após a configuração, o valor da capacitância, temperatura do óleo,
+Medição em tempo real e exibição da temperatura da placa de controle (PCB)
+nao salve um
+2 Acumulação do tempo de operação do motor diesel (distância): tempo inicial e
+Depois de definir o valor da taxa de mudança constante dielétrica inicial, a condução do veículo
+Verifique o valor da capacitância, a temperatura do óleo e a temperatura da placa de controle.
+O tempo é médio e exibido, mas não armazenado.
+2) Tempo de funcionamento do motor (tempo correspondente à quilometragem)
+Continuar acumular até trocar.
+3) Meça e exiba a capacitância enquanto o motor estiver funcionando.
+Valor de capacitância médio por 1 após a parada do motor sem minuto salvar
+O desvio entre os valores máximos e mínimos de
+Temperatura do óleo no modo de parada do motor quando
+Quando é 80, calcule a taxa de cálculo da constante dielétrica e compare
+Faz
+
+Aviso quando a temperatura da placa de controle atinge C1 (=C2) graus Celsius
+Dá um sinal, e dá um sinal de troca ao atingir D1 (=D2)
+todo. Neste momento, o sinal de troca pode causar danos à placa de controle.
+Isso significa que pode ocorrer uma anormalidade no sinal do sensor em determinadas circunstâncias.
+
